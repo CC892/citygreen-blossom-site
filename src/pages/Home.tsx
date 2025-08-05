@@ -5,26 +5,26 @@ import verticalGarden from '@/assets/vertical-garden.jpg';
 
 const Home = () => {
   const stats = [
-    { icon: Users, value: '500+', label: 'Happy Clients' },
-    { icon: Leaf, value: '1000+', label: 'Plants Delivered' },
-    { icon: Award, value: 'GAP', label: 'Certified' },
-    { icon: Clock, value: '15+', label: 'Years Experience' },
+    { icon: Users, value: '50+', label: 'Greenhouse Projects' },
+    { icon: Leaf, value: '50+', label: 'Acres Managed' },
+    { icon: Award, value: 'SL-GAP', label: 'Certified' },
+    { icon: Clock, value: '10+', label: 'Years Experience' },
   ];
 
   const featuredServices = [
     {
-      title: 'Landscape Designing',
-      description: 'Custom landscape designs tailored to your space and vision.',
+      title: 'Greenhouse Construction',
+      description: 'Custom greenhouse solutions from small tunnels to advanced climate control systems.',
       image: verticalGarden,
     },
     {
-      title: 'Vertical Gardens',
-      description: 'Space-saving vertical garden solutions for modern living.',
+      title: 'Irrigation & Automation',
+      description: 'Modern irrigation systems with remote monitoring and control capabilities.',
       image: verticalGarden,
     },
     {
-      title: 'Garden Maintenance',
-      description: 'Professional ongoing care to keep your garden thriving.',
+      title: 'Training Programs',
+      description: 'Comprehensive agricultural training from basic to advanced farming techniques.',
       image: verticalGarden,
     },
   ];
@@ -39,12 +39,12 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Transforming Spaces with{' '}
-              <span className="text-primary">Nature's Beauty</span>
+              Leading Agricultural{' '}
+              <span className="text-primary">Technology Solutions</span>
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              CityGreen is a leading landscaping company in Sri Lanka, based in Boralesgamuwa. 
-              We offer eco-friendly, professional greenery solutions tailored to commercial and residential spaces.
+              CityGreen Agro (Pvt) Ltd is a pioneering agricultural technology company in Sri Lanka, established in 2015. 
+              We specialize in greenhouse construction, modern farming solutions, and agricultural innovation with 8 large greenhouses and 50+ acres under management.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
               <Link
@@ -90,10 +90,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Our Featured <span className="text-primary">Services</span>
+              Our Core <span className="text-primary">Solutions</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              From design to maintenance, we provide comprehensive landscaping solutions.
+              From greenhouse construction to farm management, we provide complete agricultural technology solutions.
             </p>
           </div>
 
@@ -124,7 +124,7 @@ const Home = () => {
               to="/services"
               className="btn-hero inline-flex items-center space-x-2"
             >
-              <span>View All Services</span>
+              <span>View All Solutions</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
@@ -135,24 +135,24 @@ const Home = () => {
       <section className="section-padding bg-gradient-primary">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
-            Ready to Transform Your Space?
+            Ready to Modernize Your Farm?
           </h2>
           <p className="text-xl text-primary-foreground/90">
-            Let's work together to create the perfect outdoor environment for your home or business.
+            Join us in revolutionizing agriculture with cutting-edge greenhouse technology and sustainable farming practices.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="bg-primary-foreground text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground/90 transition-colors inline-flex items-center space-x-2"
             >
-              <span>Get Your Free Quote</span>
+              <span>Get Consultation</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               to="/products"
               className="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground hover:text-primary transition-colors"
             >
-              Browse Our Plants
+              View Our Products
             </Link>
           </div>
         </div>

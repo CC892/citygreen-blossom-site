@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Sun, Droplets, Home, Building2, Filter } from 'lucide-react';
+import { Leaf, Package, Droplets, Truck, Filter } from 'lucide-react';
 
-// Import plant images
+// Import images for agriculture products
 import arecaPalm from '@/assets/plants/areca-palm.jpg';
 import ficus from '@/assets/plants/ficus.jpg';
 import philodendron from '@/assets/plants/philodendron.jpg';
@@ -13,163 +13,131 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const products = [
+    // Fruits & Vegetables
     {
       id: 1,
-      name: 'Areca Palm',
+      name: 'Organic Tomatoes',
       image: arecaPalm,
-      sunlight: 'Bright Indirect',
-      watering: 'Moderate',
-      location: 'Indoor/Outdoor',
-      category: 'palm',
-      description: 'Popular indoor palm that adds tropical elegance to any space.'
+      category: 'fruits-vegetables',
+      type: 'Export Quality',
+      availability: 'Year-round',
+      description: 'Premium greenhouse-grown tomatoes with superior taste and shelf life.'
     },
     {
       id: 2,
-      name: 'Ficus',
+      name: 'Bell Peppers',
       image: ficus,
-      sunlight: 'Bright Light',
-      watering: 'Moderate',
-      location: 'Indoor/Outdoor',
-      category: 'tree',
-      description: 'Versatile plant perfect for both indoor decoration and outdoor landscaping.'
+      category: 'fruits-vegetables',
+      type: 'Domestic & Export',
+      availability: 'Year-round',
+      description: 'Vibrant, crisp bell peppers grown in controlled environment greenhouses.'
     },
     {
       id: 3,
-      name: 'Philodendron',
+      name: 'Lettuce Varieties',
       image: philodendron,
-      sunlight: 'Medium Light',
-      watering: 'Low-Moderate',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Easy-care trailing plant with beautiful heart-shaped leaves.'
+      category: 'fruits-vegetables',
+      type: 'Hydroponic',
+      availability: 'Year-round',
+      description: 'Fresh, pesticide-free lettuce grown using advanced hydroponic systems.'
     },
     {
       id: 4,
-      name: 'Dracaena',
-      image: ficus, // Using ficus as placeholder
-      sunlight: 'Low-Medium',
-      watering: 'Low',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Low-maintenance plant with striking striped leaves.'
+      name: 'Cucumbers',
+      image: peaceLily,
+      category: 'fruits-vegetables',
+      type: 'Greenhouse',
+      availability: 'Year-round',
+      description: 'Long English cucumbers with excellent quality and yield.'
     },
+    // Plants & Seeds
     {
       id: 5,
-      name: 'Spider Plant',
-      image: philodendron, // Using philodendron as placeholder
-      sunlight: 'Bright Indirect',
-      watering: 'Moderate',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Air-purifying plant that produces charming baby plantlets.'
+      name: 'Vegetable Seedlings',
+      image: sansevieria,
+      category: 'plants-seeds',
+      type: 'Various Species',
+      availability: 'Seasonal',
+      description: 'High-quality vegetable seedlings for home gardens and commercial farms.'
     },
     {
       id: 6,
-      name: 'Sansevieria (Snake Plant)',
-      image: sansevieria,
-      sunlight: 'Low-Bright',
-      watering: 'Very Low',
-      location: 'Indoor',
-      category: 'succulent',
-      description: 'Extremely hardy plant that thrives in almost any condition.'
+      name: 'Hybrid Seeds',
+      image: moneyPlant,
+      category: 'plants-seeds',
+      type: 'Imported',
+      availability: 'Year-round',
+      description: 'Premium hybrid seeds with high germination rates and disease resistance.'
     },
     {
       id: 7,
-      name: 'Money Plant',
-      image: moneyPlant,
-      sunlight: 'Medium Light',
-      watering: 'Moderate',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Believed to bring good fortune and prosperity to your home.'
+      name: 'Local Varieties',
+      image: ficus,
+      category: 'plants-seeds',
+      type: 'Traditional',
+      availability: 'Seasonal',
+      description: 'Native Sri Lankan plant varieties adapted to local climate conditions.'
     },
+    // Fertilizers & Grow Media
     {
       id: 8,
-      name: 'Dieffenbachia',
-      image: philodendron, // Using philodendron as placeholder
-      sunlight: 'Medium Light',
-      watering: 'Moderate',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Stunning variegated leaves that brighten any indoor space.'
+      name: 'Organic Fertilizers',
+      image: arecaPalm,
+      category: 'fertilizers',
+      type: 'Certified Organic',
+      availability: 'Year-round',
+      description: 'Environmentally friendly fertilizers for sustainable agriculture.'
     },
     {
       id: 9,
-      name: 'Peace Lily',
-      image: peaceLily,
-      sunlight: 'Low-Medium',
-      watering: 'Moderate',
-      location: 'Indoor',
-      category: 'flowering',
-      description: 'Elegant flowering plant that also purifies the air.'
+      name: 'Hydroponic Nutrients',
+      image: philodendron,
+      category: 'fertilizers',
+      type: 'Specialized',
+      availability: 'Year-round',
+      description: 'Complete nutrient solutions for hydroponic growing systems.'
     },
     {
       id: 10,
-      name: 'Calathea',
-      image: philodendron, // Using philodendron as placeholder
-      sunlight: 'Medium Light',
-      watering: 'High',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Prayer plant with beautifully patterned leaves.'
+      name: 'Growing Media',
+      image: sansevieria,
+      category: 'fertilizers',
+      type: 'Soilless',
+      availability: 'Year-round',
+      description: 'Premium growing substrates for greenhouse and hydroponic cultivation.'
     },
+    // Greenhouse Accessories
     {
       id: 11,
-      name: 'Aglaonema',
-      image: sansevieria, // Using sansevieria as placeholder
-      sunlight: 'Low-Medium',
-      watering: 'Low-Moderate',
-      location: 'Indoor',
-      category: 'foliage',
-      description: 'Colorful foliage plant perfect for low-light areas.'
+      name: 'Climate Control Systems',
+      image: peaceLily,
+      category: 'accessories',
+      type: 'Automated',
+      availability: 'Year-round',
+      description: 'Advanced climate control equipment for optimal growing conditions.'
     },
     {
       id: 12,
-      name: 'Croton',
-      image: ficus, // Using ficus as placeholder
-      sunlight: 'Bright Light',
-      watering: 'Moderate',
-      location: 'Indoor/Outdoor',
-      category: 'foliage',
-      description: 'Vibrant, colorful leaves that add drama to any setting.'
-    },
-    {
-      id: 13,
-      name: 'Zamia',
-      image: arecaPalm, // Using areca palm as placeholder
-      sunlight: 'Medium Light',
-      watering: 'Low',
-      location: 'Indoor/Outdoor',
-      category: 'palm',
-      description: 'Compact palm-like plant that\'s perfect for modern spaces.'
+      name: 'Irrigation Equipment',
+      image: moneyPlant,
+      category: 'accessories',
+      type: 'Professional',
+      availability: 'Year-round',
+      description: 'Complete irrigation systems and components for greenhouse operations.'
     }
   ];
 
   const categories = [
-    { id: 'all', name: 'All Plants', icon: Filter },
-    { id: 'foliage', name: 'Foliage Plants', icon: Home },
-    { id: 'palm', name: 'Palms', icon: Building2 },
-    { id: 'flowering', name: 'Flowering', icon: Sun },
-    { id: 'succulent', name: 'Succulents', icon: Droplets }
+    { id: 'all', name: 'All Products', icon: Filter },
+    { id: 'fruits-vegetables', name: 'Fruits & Vegetables', icon: Leaf },
+    { id: 'plants-seeds', name: 'Plants & Seeds', icon: Package },
+    { id: 'fertilizers', name: 'Fertilizers & Media', icon: Droplets },
+    { id: 'accessories', name: 'Greenhouse Accessories', icon: Truck }
   ];
 
   const filteredProducts = selectedCategory === 'all' 
     ? products 
     : products.filter(product => product.category === selectedCategory);
-
-  const getSunlightIcon = (sunlight: string) => {
-    return <Sun className="h-4 w-4 text-yellow-500" />;
-  };
-
-  const getWateringIcon = (watering: string) => {
-    return <Droplets className="h-4 w-4 text-blue-500" />;
-  };
-
-  const getLocationIcon = (location: string) => {
-    return location.includes('Indoor') ? 
-      <Home className="h-4 w-4 text-green-600" /> : 
-      <Building2 className="h-4 w-4 text-green-600" />;
-  };
 
   return (
     <div className="pt-20">
@@ -177,10 +145,10 @@ const Products = () => {
       <section className="section-padding bg-gradient-primary">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Our <span className="text-primary-foreground/90">Plants</span>
+            Our <span className="text-primary-foreground/90">Products</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Discover our collection of healthy, beautiful plants perfect for your home or office.
+            Fresh agricultural products and farming supplies from our certified facilities.
           </p>
         </div>
       </section>
@@ -232,26 +200,18 @@ const Products = () => {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-sm">
                       <div className="flex items-center space-x-2">
-                        {getSunlightIcon(product.sunlight)}
-                        <span className="text-muted-foreground">Light:</span>
+                        <Package className="h-4 w-4 text-primary" />
+                        <span className="text-muted-foreground">Type:</span>
                       </div>
-                      <span className="font-medium text-foreground">{product.sunlight}</span>
+                      <span className="font-medium text-foreground">{product.type}</span>
                     </div>
                     
                     <div className="flex items-center justify-between text-sm">
                       <div className="flex items-center space-x-2">
-                        {getWateringIcon(product.watering)}
-                        <span className="text-muted-foreground">Water:</span>
+                        <Truck className="h-4 w-4 text-green-600" />
+                        <span className="text-muted-foreground">Available:</span>
                       </div>
-                      <span className="font-medium text-foreground">{product.watering}</span>
-                    </div>
-                    
-                    <div className="flex items-center justify-between text-sm">
-                      <div className="flex items-center space-x-2">
-                        {getLocationIcon(product.location)}
-                        <span className="text-muted-foreground">Use:</span>
-                      </div>
-                      <span className="font-medium text-foreground">{product.location}</span>
+                      <span className="font-medium text-foreground">{product.availability}</span>
                     </div>
                   </div>
                 </div>
@@ -261,26 +221,26 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Care Tips Section */}
+      {/* Quality Standards Section */}
       <section className="section-padding bg-accent/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              Plant <span className="text-primary">Care Tips</span>
+              Quality <span className="text-primary">Standards</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Follow these guidelines to keep your plants healthy and thriving.
+              Our commitment to excellence in every product we deliver.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="nature-card p-8 text-center space-y-4">
               <div className="mx-auto p-4 bg-gradient-primary rounded-xl shadow-medium w-fit">
-                <Sun className="h-8 w-8 text-primary-foreground" />
+                <Leaf className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Proper Lighting</h3>
+              <h3 className="text-xl font-semibold text-foreground">SL-GAP Certified</h3>
               <p className="text-muted-foreground">
-                Each plant has specific light requirements. Place them in appropriate locations for optimal growth.
+                All our products meet Sri Lanka Good Agricultural Practices standards for quality and safety.
               </p>
             </div>
 
@@ -288,19 +248,19 @@ const Products = () => {
               <div className="mx-auto p-4 bg-gradient-primary rounded-xl shadow-medium w-fit">
                 <Droplets className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Smart Watering</h3>
+              <h3 className="text-xl font-semibold text-foreground">Sustainable Growing</h3>
               <p className="text-muted-foreground">
-                Water when the soil feels dry to touch. Overwatering is more harmful than underwatering.
+                Water-efficient irrigation and sustainable farming practices in all our operations.
               </p>
             </div>
 
             <div className="nature-card p-8 text-center space-y-4">
               <div className="mx-auto p-4 bg-gradient-primary rounded-xl shadow-medium w-fit">
-                <Home className="h-8 w-8 text-primary-foreground" />
+                <Package className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Regular Care</h3>
+              <h3 className="text-xl font-semibold text-foreground">Fresh Delivery</h3>
               <p className="text-muted-foreground">
-                Regular pruning, fertilizing, and monitoring help maintain plant health and appearance.
+                Direct from farm to table with maintained cold chain for maximum freshness.
               </p>
             </div>
           </div>

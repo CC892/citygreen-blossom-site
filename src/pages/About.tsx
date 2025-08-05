@@ -5,18 +5,18 @@ const About = () => {
   const values = [
     {
       icon: Leaf,
-      title: 'Eco-Friendly',
-      description: 'We prioritize sustainable practices and environmentally safe solutions in all our projects.'
+      title: 'Innovation',
+      description: 'Cutting-edge agricultural technology and modern farming methods for sustainable agriculture.'
     },
     {
       icon: Award,
-      title: 'Quality Assured',
-      description: 'GAP certified with strict quality control measures ensuring the best results for our clients.'
+      title: 'Quality Excellence',
+      description: 'SL-GAP certified with rigorous quality standards ensuring superior agricultural products and services.'
     },
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Our experienced professionals bring years of expertise in landscaping and plant care.'
+      title: 'Expertise',
+      description: 'Over 50 completed greenhouse projects and decades of agricultural innovation experience.'
     }
   ];
 
@@ -26,10 +26,10 @@ const About = () => {
       <section className="section-padding bg-gradient-primary">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-            About <span className="text-primary-foreground/90">CityGreen</span>
+            About <span className="text-primary-foreground/90">CityGreen Agro</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Your trusted landscaping partner, bringing nature's beauty to Sri Lankan homes and businesses since 2008.
+            Pioneering agricultural technology in Sri Lanka since 2015, transforming traditional farming with modern solutions.
           </p>
         </div>
       </section>
@@ -44,25 +44,26 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  CityGreen is a leading landscaping company in Sri Lanka, based in the heart of Boralesgamuwa. 
-                  Founded with a vision to transform urban spaces into green sanctuaries, we have been serving 
-                  the community for over 15 years.
+                  CityGreen Agro (Pvt) Ltd is a pioneering agricultural technology company established in 2015 and 
+                  officially registered in 2018. Based in Boralesgamuwa, we specialize in greenhouse construction, 
+                  modern farming solutions, and agricultural innovation across Sri Lanka.
                 </p>
                 <p>
-                  We specialize in providing eco-friendly, professional greenery solutions that are carefully 
-                  tailored to both commercial and residential spaces. Our commitment to sustainability and 
-                  quality has made us a trusted partner for hundreds of satisfied clients across Sri Lanka.
+                  With 8 large greenhouses spanning 20,000 square feet and over 50 completed greenhouse projects 
+                  nationwide, we have revolutionized farming practices. Our expertise includes greenhouse construction, 
+                  irrigation systems, automation technology, and comprehensive farm management services.
                 </p>
                 <p>
-                  As a GAP (Good Agricultural Practices) certified company, we ensure that every plant, 
-                  every design, and every service meets the highest standards of quality and environmental safety.
+                  We manage over 50 acres of farmland and are SL-GAP certified, ensuring our agricultural practices 
+                  meet international standards. Our mission is to connect urban living with modern farming, improving 
+                  quality of life through sustainable, high-quality organic products.
                 </p>
               </div>
               <Link
                 to="/services"
                 className="btn-hero inline-flex items-center space-x-2"
               >
-                <span>Explore Our Services</span>
+                <span>Explore Our Solutions</span>
               </Link>
             </div>
             
@@ -135,24 +136,24 @@ const About = () => {
 
             <div className="space-y-6">
               {/* GAP Certification */}
-              <div className="bg-gradient-primary p-8 rounded-2xl shadow-large">
+                <div className="bg-gradient-primary p-8 rounded-2xl shadow-large">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="p-3 bg-primary-foreground/20 rounded-xl">
                     <Award className="h-8 w-8 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-primary-foreground">GAP Certified</h3>
-                    <p className="text-primary-foreground/80">Good Agricultural Practices</p>
+                    <h3 className="text-2xl font-bold text-primary-foreground">SL-GAP Certified</h3>
+                    <p className="text-primary-foreground/80">Sri Lanka Good Agricultural Practices</p>
                   </div>
                 </div>
                 <p className="text-primary-foreground/90 leading-relaxed">
-                  CityGreen follows Good Agricultural Practices (GAP), ensuring quality, 
-                  sustainable, and environmentally safe plant production. This certification 
-                  guarantees that our processes meet international standards for agricultural excellence.
+                  CityGreen Agro is SL-GAP certified, ensuring our agricultural operations meet the highest 
+                  standards for quality, sustainability, and safety. This certification validates our commitment 
+                  to modern farming excellence and environmental responsibility.
                 </p>
                 
                 <div className="mt-6 space-y-2">
-                  {['Quality Plant Production', 'Environmental Safety', 'Sustainable Practices', 'International Standards'].map((item) => (
+                  {['Certified Organic Production', 'Environmental Safety', 'Sustainable Agriculture', 'International Standards'].map((item) => (
                     <div key={item} className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-primary-foreground" />
                       <span className="text-primary-foreground/90 text-sm">{item}</span>

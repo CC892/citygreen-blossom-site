@@ -13,59 +13,47 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   const services = [
     {
-      icon: PenTool,
-      title: 'Landscape Designing',
-      description: 'Custom landscape designs that transform your vision into reality. Our expert designers create beautiful, functional outdoor spaces tailored to your specific needs and preferences.',
-      features: ['Site Analysis', 'Custom Design Plans', '3D Visualization', 'Plant Selection']
-    },
-    {
-      icon: Wrench,
-      title: 'Garden Renovation',
-      description: 'Breathe new life into existing gardens with our comprehensive renovation services. We transform tired landscapes into vibrant, thriving outdoor spaces.',
-      features: ['Complete Makeovers', 'Soil Improvement', 'New Plant Installation', 'Hardscape Updates']
-    },
-    {
-      icon: Scissors,
-      title: 'Landscape Maintenance',
-      description: 'Keep your garden looking its best year-round with our professional maintenance services. Regular care ensures healthy, beautiful landscapes.',
-      features: ['Regular Pruning', 'Fertilization', 'Pest Control', 'Seasonal Care']
-    },
-    {
       icon: Building,
-      title: 'Vertical Gardens',
-      description: 'Maximize your green space with innovative vertical garden solutions. Perfect for urban environments and small spaces.',
-      features: ['Living Walls', 'Modular Systems', 'Automated Irrigation', 'Custom Designs']
-    },
-    {
-      icon: TreePine,
-      title: 'Turf and Lawn Installation',
-      description: 'Professional lawn installation services using high-quality turf. Create the perfect green carpet for your outdoor space.',
-      features: ['Soil Preparation', 'Premium Turf', 'Drainage Systems', 'Post-Installation Care']
+      title: 'Greenhouse Construction',
+      description: 'Custom greenhouse solutions for all scales, from small tropical tunnels to advanced climate control systems. Built to withstand extreme weather conditions with 5-year guarantee.',
+      features: ['Custom Structural Design', 'Climate Control Systems', 'Soil/Hydroponic Adaptable', '5-Year Guarantee']
     },
     {
       icon: Droplets,
-      title: 'Irrigation Systems',
-      description: 'Efficient watering solutions that ensure your plants receive optimal hydration while conserving water resources.',
-      features: ['Drip Irrigation', 'Sprinkler Systems', 'Smart Controllers', 'Water Conservation']
+      title: 'Irrigation & Automation',
+      description: 'Complete irrigation solutions including design, installation, and maintenance. Advanced automation systems for remote monitoring and control.',
+      features: ['Drip Irrigation', 'Fertigation Systems', 'Remote Monitoring', 'Water Conservation']
     },
     {
-      icon: Building,
-      title: 'Green Walls',
-      description: 'Transform bare walls into living masterpieces with our green wall installations. Improve air quality and aesthetics simultaneously.',
-      features: ['Modular Panels', 'Plant Selection', 'Maintenance Plans', 'Custom Sizing']
+      icon: PenTool,
+      title: 'Training Programs',
+      description: 'Comprehensive agricultural training programs from beginner to advanced levels. Group and individual programs designed to create young entrepreneurs.',
+      features: ['1-Day Awareness', '3-Day Basic Program', 'Advanced Training', 'Individual Coaching']
     },
     {
-      icon: Home,
-      title: 'Residential Landscaping',
-      description: 'Complete landscaping solutions for homes, creating outdoor spaces that enhance your property value and quality of life.',
-      features: ['Garden Design', 'Plant Installation', 'Outdoor Living Areas', 'Privacy Screening']
+      icon: TreePine,
+      title: 'Farm Management',
+      description: 'Professional farm management services with over 50 acres under our care. Complete solutions including technology integration and modern machinery.',
+      features: ['Land Management', 'Technology Integration', 'Crop Planning', 'Harvest Optimization']
+    },
+    {
+      icon: Wrench,
+      title: 'System Maintenance',
+      description: 'Regular maintenance services for greenhouse and irrigation systems to ensure optimal performance and longevity.',
+      features: ['Preventive Maintenance', 'System Upgrades', 'Emergency Repairs', '24/7 Support']
+    },
+    {
+      icon: Scissors,
+      title: 'Crop Consulting',
+      description: 'Expert agricultural consulting services to maximize crop yields and implement best practices for sustainable farming.',
+      features: ['Crop Selection', 'Yield Optimization', 'Disease Management', 'Organic Practices']
     }
   ];
 
   const additionalServices = [
-    { icon: Briefcase, title: 'Commercial Landscaping', description: 'Professional landscaping for businesses and commercial properties.' },
-    { icon: TreePine, title: 'Tree Care Services', description: 'Expert tree maintenance, pruning, and health assessments.' },
-    { icon: Droplets, title: 'Water Feature Installation', description: 'Beautiful fountains, ponds, and water elements for your landscape.' }
+    { icon: Briefcase, title: 'Export Support', description: 'Assistance with agricultural export processes and international market access.' },
+    { icon: TreePine, title: 'Certification Support', description: 'Guidance for obtaining SL-GAP and other agricultural certifications.' },
+    { icon: Droplets, title: 'Solar Solutions', description: 'Solar-powered irrigation systems for sustainable farming operations.' }
   ];
 
   return (
@@ -74,10 +62,10 @@ const Services = () => {
       <section className="section-padding bg-gradient-primary">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6">
-            Our <span className="text-primary-foreground/90">Services</span>
+            Our <span className="text-primary-foreground/90">Solutions</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Comprehensive landscaping solutions from design to maintenance, tailored to your unique needs.
+            Comprehensive agricultural technology solutions from greenhouse construction to farm management.
           </p>
         </div>
       </section>
@@ -87,10 +75,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              Professional <span className="text-primary">Landscaping Services</span>
+              Advanced <span className="text-primary">Agricultural Solutions</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              From initial design concepts to ongoing maintenance, we provide complete landscaping solutions that bring your outdoor vision to life.
+              From greenhouse construction to automation systems, we provide complete agricultural technology solutions that transform traditional farming.
             </p>
           </div>
 
@@ -133,10 +121,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Additional <span className="text-primary">Specialties</span>
+              Additional <span className="text-primary">Services</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              We also offer specialized services to meet all your landscaping needs.
+              Specialized services to support your complete agricultural journey.
             </p>
           </div>
 
@@ -162,23 +150,23 @@ const Services = () => {
       <section className="section-padding bg-primary">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
-            Ready to Get Started?
+            Ready to Modernize Your Farm?
           </h2>
           <p className="text-xl text-primary-foreground/90">
-            Contact us today for a free consultation and let's discuss how we can transform your outdoor space.
+            Contact us today for a consultation and discover how we can transform your agricultural operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="bg-primary-foreground text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground/90 transition-colors"
             >
-              Get Free Consultation
+              Get Consultation
             </Link>
             <Link
               to="/projects"
               className="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground hover:text-primary transition-colors"
             >
-              View Our Work
+              View Our Projects
             </Link>
           </div>
         </div>

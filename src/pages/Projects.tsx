@@ -9,83 +9,83 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Vertical Garden Installation – Colombo',
-      category: 'vertical',
+      title: 'Commercial Greenhouse Complex – Colombo',
+      category: 'commercial',
       location: 'Colombo, Sri Lanka',
       date: '2024',
       image: verticalGarden,
-      description: 'Modern vertical garden installation for a corporate office building, featuring automated irrigation and diverse tropical plants.'
+      description: 'Large-scale greenhouse facility with automated climate control and hydroponic systems for year-round vegetable production.'
     },
     {
       id: 2,
-      title: 'Residential Turf Lawn – Dehiwala',
-      category: 'residential',
-      location: 'Dehiwala, Sri Lanka',
+      title: 'Smart Farm Automation – Kandy',
+      category: 'automation',
+      location: 'Kandy, Sri Lanka',
       date: '2024',
       image: heroBackground,
-      description: 'Complete lawn transformation with premium turf installation, including soil preparation and drainage systems.'
+      description: 'Complete farm automation system with remote monitoring, automated irrigation, and climate control for optimal crop yields.'
     },
     {
       id: 3,
-      title: 'Green Wall Project – Galle',
-      category: 'commercial',
+      title: 'Hydroponic Training Center – Galle',
+      category: 'training',
       location: 'Galle, Sri Lanka',
       date: '2023',
       image: verticalGarden,
-      description: 'Large-scale green wall installation for a luxury hotel, enhancing the lobby area with natural beauty.'
+      description: 'Educational greenhouse facility designed for training programs with demonstration hydroponic and traditional growing systems.'
     },
     {
       id: 4,
-      title: 'Corporate Garden Renovation – Mount Lavinia',
+      title: 'Export Quality Greenhouse – Ratnapura',
       category: 'commercial',
-      location: 'Mount Lavinia, Sri Lanka',
+      location: 'Ratnapura, Sri Lanka',
       date: '2023',
       image: heroBackground,
-      description: 'Complete renovation of corporate headquarters garden with modern landscape design and sustainable practices.'
+      description: 'High-tech greenhouse facility specialized for export-quality vegetable production with international certification standards.'
     },
     {
       id: 5,
-      title: 'Rooftop Garden – Nugegoda',
-      category: 'residential',
-      location: 'Nugegoda, Sri Lanka',
+      title: 'Solar-Powered Farm – Kurunegala',
+      category: 'automation',
+      location: 'Kurunegala, Sri Lanka',
       date: '2023',
       image: verticalGarden,
-      description: 'Urban rooftop garden design with space-efficient vertical growing systems and weather-resistant plants.'
+      description: 'Sustainable farm operation with solar-powered irrigation systems and energy-efficient greenhouse technology.'
     },
     {
       id: 6,
-      title: 'Commercial Landscaping – Kandy',
-      category: 'commercial',
-      location: 'Kandy, Sri Lanka',
+      title: 'Organic Certification Project – Matale',
+      category: 'training',
+      location: 'Matale, Sri Lanka',
       date: '2022',
       image: heroBackground,
-      description: 'Comprehensive landscaping for a shopping complex, including outdoor seating areas and decorative plant displays.'
+      description: 'Complete farm transformation to achieve organic certification with training programs for sustainable farming practices.'
     },
     {
       id: 7,
-      title: 'Private Villa Garden – Negombo',
-      category: 'residential',
-      location: 'Negombo, Sri Lanka',
+      title: 'Multi-Crop Greenhouse – Anuradhapura',
+      category: 'commercial',
+      location: 'Anuradhapura, Sri Lanka',
       date: '2022',
       image: heroBackground,
-      description: 'Luxury villa garden with tropical landscaping, water features, and entertainment area integration.'
+      description: 'Versatile greenhouse design supporting multiple crop varieties with adaptive climate zones and irrigation systems.'
     },
     {
       id: 8,
-      title: 'Vertical Garden Wall – Panadura',
-      category: 'vertical',
-      location: 'Panadura, Sri Lanka',
+      title: 'Research & Development Facility – Peradeniya',
+      category: 'training',
+      location: 'Peradeniya, Sri Lanka',
       date: '2022',
       image: verticalGarden,
-      description: 'Innovative vertical garden solution for a residential complex, maximizing green space in limited areas.'
+      description: 'Advanced research greenhouse for agricultural innovation and variety development with university partnership.'
     }
   ];
 
   const filters = [
     { id: 'all', name: 'All Projects' },
-    { id: 'commercial', name: 'Commercial' },
-    { id: 'residential', name: 'Residential' },
-    { id: 'vertical', name: 'Vertical Gardens' }
+    { id: 'commercial', name: 'Greenhouse Construction' },
+    { id: 'automation', name: 'Automation Systems' },
+    { id: 'training', name: 'Training & Certification' }
   ];
 
   const filteredProjects = selectedFilter === 'all' 
@@ -101,7 +101,7 @@ const Projects = () => {
             Our <span className="text-primary-foreground/90">Projects</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Discover our portfolio of successful landscaping projects across Sri Lanka.
+            Showcasing our successful greenhouse installations and agricultural technology projects.
           </p>
         </div>
       </section>
@@ -147,7 +147,7 @@ const Projects = () => {
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${
                       project.category === 'commercial' ? 'bg-blue-500' :
-                      project.category === 'residential' ? 'bg-green-500' :
+                      project.category === 'automation' ? 'bg-green-500' :
                       'bg-purple-500'
                     }`}>
                       {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
@@ -197,10 +197,10 @@ const Projects = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: '500+', label: 'Projects Completed' },
-              { value: '15+', label: 'Years Experience' },
-              { value: '100%', label: 'Client Satisfaction' },
-              { value: '50+', label: 'Locations Served' }
+              { value: '50+', label: 'Greenhouses Built' },
+              { value: '10+', label: 'Years Experience' },
+              { value: '50+', label: 'Acres Managed' },
+              { value: '20K', label: 'Sq Ft Facilities' }
             ].map((stat, index) => (
               <div key={index} className="text-center space-y-2">
                 <div className="text-4xl md:text-5xl font-bold text-primary">{stat.value}</div>
@@ -215,18 +215,18 @@ const Projects = () => {
       <section className="section-padding bg-primary">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
-            Start Your Project Today
+            Start Your Agricultural Project
           </h2>
           <p className="text-xl text-primary-foreground/90">
-            Ready to transform your space? Let's discuss your landscaping vision and bring it to life.
+            Ready to modernize your farming operation? Let's discuss your agricultural technology needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-primary-foreground text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground/90 transition-colors"
-            >
-              Get Free Quote
-            </a>
+              <a
+                href="/contact"
+                className="bg-primary-foreground text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground/90 transition-colors"
+              >
+                Get Consultation
+              </a>
             <a
               href="tel:+94777575521"
               className="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-foreground hover:text-primary transition-colors"

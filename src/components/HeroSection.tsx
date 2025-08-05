@@ -24,20 +24,20 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Welcome to{' '}
+            Connecting Urban Living with{' '}
             <span className="bg-gradient-to-r from-white to-primary-foreground bg-clip-text text-transparent">
-              CityGreen
+              Modern Farming
             </span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light max-w-2xl mx-auto">
-            Your Trusted Landscaping Partner in Sri Lanka
+            Leading Agricultural Technology Solutions in Sri Lanka
           </p>
 
           {/* Features */}
           <div className="flex flex-wrap justify-center gap-6 py-6">
-            {['GAP Certified', 'Eco-Friendly Solutions', '15+ Years Experience'].map((feature) => (
+            {['SL-GAP Certified', '50+ Greenhouse Projects', '10+ Years Experience'].map((feature) => (
               <div key={feature} className="flex items-center space-x-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2">
                 <CheckCircle className="h-5 w-5 text-primary-foreground" />
                 <span className="text-primary-foreground text-sm font-medium">{feature}</span>
@@ -51,14 +51,14 @@ const HeroSection = () => {
               to="/services"
               className="btn-hero inline-flex items-center space-x-2 group"
             >
-              <span>Explore Our Services</span>
+              <span>Our Solutions</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/contact"
               className="btn-hero-outline inline-flex items-center space-x-2 bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
-              <span>Contact Us</span>
+              <span>Get Consultation</span>
             </Link>
           </div>
         </div>
